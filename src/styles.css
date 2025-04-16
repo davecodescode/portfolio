@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'primeflex/primeflex.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import "primeicons/primeicons.css";
+@import url('https://cdn.jsdelivr.net/npm/primeng@13.3.1/resources/themes/lara-dark-indigo/theme.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');*/
+body {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+:host{
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.p-menubar {
+  border: none !important;
+  background-color: transparent !important;
+  color: white;
+  font-size: large;
+
+}
+
+.p-button-label{
+  /*margin-left: 100px;*/
+
+color: #000000;
+}
+.p-ripple p-button p-component {
+  color: orange;
+}
+.p-menubar-item-label {
+  right: 0;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fullstack {
+  display: inline-block;
+  animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+.active-menu {
+  background-color: #007bff !important; /* Change this to match your theme */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 5px;
+}
+

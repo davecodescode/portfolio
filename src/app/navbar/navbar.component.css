@@ -1,0 +1,24 @@
+
+.p-menubar{
+  color: white;
+}
+.description{
+  font-family: "Arial Unicode MS", Helvetica, sans-serif;
+}
+.menubar {
+  position: fixed; /* Fix the menu to the top */
+  top: 0; /* Ensure it stays at the top */
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Keep it above other elements */
+  background-color: #000000; /* Adjust to match your design */
+}
+
+.menubar .p-menubar {
+  border-radius: 0;
+}
+
+body {
+  padding-top: 60px; /
+  margin: 0;
+}

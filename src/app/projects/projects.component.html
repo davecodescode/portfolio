@@ -1,0 +1,67 @@
+
+
+<!--<div class="particle-background">-->
+<!--  <canvas #particleCanvas></canvas>-->
+<!--  <div class="card-container">-->
+<!--    <div #card class="card" *ngFor="let project of projects" id="card-{{project.id}}" (click)="flipCard($event, project.id)">-->
+<!--      <div class="card-inner">-->
+<!--        <div class="card-front glass-effect">-->
+<!--          <h2>{{ project.title }}</h2>-->
+<!--          <p class="tagline">Click to learn more</p>-->
+<!--        </div>-->
+<!--        <div class="card-back glass-effect">-->
+<!--          <h3>{{ project.title }}</h3>-->
+<!--          <p>{{ project.details }}</p>-->
+<!--          <a [href]="project.link" target="_blank" class="learn-more">Learn More</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="particle-background">-->
+<!--  <canvas #particleCanvas></canvas>-->
+<!--  <div class="card-container">-->
+<!--    <div class="grid-2x2">-->
+<!--      <div #card class="card" *ngFor="let project of projects" id="card-{{project.id}}" (click)="flipCard($event, project.id)">-->
+<!--        <div class="card-inner">-->
+<!--          <div class="card-front glass-effect">-->
+<!--            <h2>{{ project.title }}</h2>-->
+<!--            <p class="tagline">Click to learn more</p>-->
+<!--          </div>-->
+<!--          <div class="card-back glass-effect">-->
+<!--            <h3>{{ project.title }}</h3>-->
+<!--            <div [innerHTML]="project.details"></div>-->
+<!--            <a [href]="project.link" target="_blank" class="learn-more">Learn More</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+<div class="particle-background">
+  <canvas #particleCanvas></canvas>
+  <div class="card-container">
+    <div class="grid-2x2">
+      <div #card class="card" *ngFor="let project of projects" id="card-{{project.id}}" (click)="flipCard($event, project.id)">
+        <div class="card-inner">
+          <div class="card-front glass-effect">
+            <h2>{{ project.title }}</h2>
+            <p class="tagline">Click to learn more</p>
+          </div>
+          <div class="card-back glass-effect">
+            <div [innerHTML]="project.details"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project">
+    <p-button label="Contact me" [routerLink]="['/contact']" class="mx-auto"></p-button>
+  </div>
+
+
+</div>

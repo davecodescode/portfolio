@@ -1,0 +1,57 @@
+<div class="skills-container">
+  <!-- Frontend Skills -->
+  <h2 class="skills-title">Frontend Skills</h2>
+  <div class="skill" *ngFor="let skill of frontendSkills">
+    <div class="skill-header">
+      <img [src]="skill.logo" alt="{{ skill.name }} logo" class="skill-logo">
+      <span class="skill-name">{{ skill.name }}</span>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-fill" [style.width.%]="skill.level">
+        <span class="skill-arrow"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend Skills -->
+  <h2 class="skills-title">Backend Skills</h2>
+  <div class="skill" *ngFor="let skill of backendSkills">
+    <div class="skill-header">
+      <img [src]="skill.logo" alt="{{ skill.name }} logo" class="skill-logo">
+      <span class="skill-name">{{ skill.name }}</span>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-fill" [style.width.%]="skill.level">
+        <span class="skill-arrow"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Skills -->
+  <h2 class="skills-title skills-title-db">Database Skills</h2>
+  <div class="skill skill-db" *ngFor="let skill of databaseSkills">
+    <div class="skill-header">
+      <img [src]="skill.logo" alt="{{ skill.name }} logo" class="skill-logo skill-logo-db">
+      <span class="skill-name">{{ skill.name }}</span>
+    </div>
+    <div class="skill-bar skill-bar-db">
+      <div class="skill-fill skill-fill-db" [style.width.%]="skill.level">
+        <span class="skill-arrow skill-arrow-db"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Operations Skills -->
+  <h2 class="skills-title skills-title-ops">Operations Skills</h2>
+  <div class="skill skill-ops" *ngFor="let skill of operationsSkills">
+    <div class="skill-header">
+      <img [src]="skill.logo" alt="{{ skill.name }} logo" class="skill-logo skill-logo-ops">
+      <span class="skill-name">{{ skill.name }}</span>
+    </div>
+    <div class="skill-bar skill-bar-ops">
+      <div class="skill-fill skill-fill-ops" [style.width.%]="skill.level">
+        <span class="skill-arrow skill-arrow-ops"></span>
+      </div>
+    </div>
+  </div>
+</div>
